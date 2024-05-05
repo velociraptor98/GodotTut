@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy02shq3q4cl4"]
+
+[ext_resource type="Script" path="res://Entities/UFO.gd" id="1_3m24t"]
+[ext_resource type="Texture2D" uid="uid://cucpccw56t3f1" path="res://Sprites/ufoRed.png" id="1_u7rfl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r5hfn"]
+radius = 44.5533
+
+[node name="UFO" type="RigidBody2D"]
+gravity_scale = 1.66533e-16
+script = ExtResource("1_3m24t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_u7rfl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r5hfn")

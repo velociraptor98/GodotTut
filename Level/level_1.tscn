@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpiuyx47xucpi"]
+[gd_scene load_steps=3 format=3 uid="uid://cpiuyx47xucpi"]
 
 [ext_resource type="Texture2D" uid="uid://dnqjvyfarhomf" path="res://Sprites/black.png" id="1_ecw8p"]
+[ext_resource type="PackedScene" uid="uid://cy02shq3q4cl4" path="res://Entities/UFO.tscn" id="2_s8url"]
 
 [node name="Level1" type="Node2D"]
 
@@ -9,3 +10,5 @@ offset_right = 1176.0
 offset_bottom = 680.0
 texture = ExtResource("1_ecw8p")
 stretch_mode = 1
+
+[node name="UFO" parent="." instance=ExtResource("2_s8url")]
