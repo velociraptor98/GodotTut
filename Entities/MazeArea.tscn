@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1kk7hsexkxgb"]
+
+[ext_resource type="Texture2D" uid="uid://b6saj64sgvr0e" path="res://Sprites/blue.png" id="1_pk240"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-32, -32, -32, 32, -8, 48, 40, 48, 56, 32, 56, 0, 152, 0, 152, 24, 168, 40, 168, 72, 168, 112, 168, 160, 136, 176, 48, 176, 48, 216, 136, 216, 192, 192, 224, 168, 224, 112, 224, 64, 192, 32, 192, 0, 200, -16, 192, -40, 144, -40, 96, -40)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_pk240")
+texture_rotation = -1.84132
+polygon = PackedVector2Array(-32, -32, -32, 32, -8, 48, 40, 48, 56, 32, 56, 0, 152, 0, 152, 24, 168, 40, 168, 72, 168, 112, 168, 160, 136, 176, 48, 176, 48, 216, 136, 216, 192, 192, 224, 168, 224, 112, 224, 64, 192, 32, 192, 0, 200, -16, 192, -40, 144, -40, 96, -40)
